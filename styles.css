@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #1E1E1E;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --teal: #4CA7C0;
+    --purple: #484FB7;
+    --lavender: #6B8FE7;
+    --yellow: #E9BB57;
+    --pink: #D9526F;
+    --dark-gray: #1E1E1E;
+    --white: #ffffff;
+}
+
+header {
+    background-color: var(--teal);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: 'Kavoon', serif;
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+nav {
+    background-color: var(--dark-gray);
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 40px;
+}
+
+h2 {
+    font-family: 'Kavoon', serif;
+    font-size: 2em;
+    color: var(--purple);
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.service img {
+    width: 50px;
+    height: 50px;
+}
+
+.service p {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+
+@media (min-width: 620px) {
+    nav ul li {
+        margin: 0 30px;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    header p {
+        font-size: 1.4em;
+    }
+}
+
+
+@media (min-width: 950px) {
+    .pricing-table {
+        display: inline-block;
+        width: 45%;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 1280px) {
+    main {
+        padding: 60px;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    header p {
+        font-size: 1.5em;
+    }
+}

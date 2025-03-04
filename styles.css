@@ -1,129 +1,157 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Kavoon&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+:root {
+    --primary: #484FB7;
+    --secondary: #E9BB57;
+    --accent: #D9526F;
+    --text-color: #FFFFFF;
+    --background: #6B8FE7;
+    --dark-text: #1E1E1E;
+    --light-gray: #F4F4F4;
+}
 
 
 body {
     font-family: 'Inter', sans-serif;
-    color: #1E1E1E;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: var(--background);
+    color: var(--dark-text);
 }
 
-
-:root {
-    --teal: #4CA7C0;
-    --purple: #484FB7;
-    --lavender: #6B8FE7;
-    --yellow: #E9BB57;
-    --pink: #D9526F;
-    --dark-gray: #1E1E1E;
-    --white: #ffffff;
-}
 
 header {
-    background-color: var(--teal);
-    color: var(--white);
+    background-color: var(--primary);
     text-align: center;
     padding: 20px;
+    color: var(--text-color);
 }
 
 header h1 {
     font-family: 'Kavoon', serif;
-    font-size: 3em;
+    font-size: 2em;
+    margin: 0;
 }
 
 header p {
-    font-size: 1.2em;
+    font-size: 1em;
+    font-style: italic;
 }
 
+/* nav Menu */
 nav {
-    background-color: var(--dark-gray);
+    background-color: var(--secondary);
     text-align: center;
+    padding: 10px 0;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 10px 0;
 }
 
 nav ul li a {
-    color: var(--white);
+    background-color: var(--text-color);
+    color: var(--primary);
+    padding: 10px 20px;
+    display: block;
     text-decoration: none;
-    font-size: 1.2em;
+    font-weight: 600;
+    margin: 5px auto;
+    width: 80%;
+    border-radius: 5px;
 }
 
-main {
-    padding: 40px;
+
+section {
+    background-color: var(--text-color);
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     font-family: 'Kavoon', serif;
-    font-size: 2em;
-    color: var(--purple);
+    font-size: 1.5em;
+    color: var(--primary);
 }
 
 h3 {
-    font-size: 1.5em;
+    color: var(--dark-text);
+    font-size: 1.2em;
+}
+
+
+.service {
+    background: var(--light-gray);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .service img {
-    width: 50px;
-    height: 50px;
-}
-
-.service p {
-    font-size: 1em;
-    margin-top: 10px;
-}
-
-ul {
-    padding-left: 20px;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
 }
 
 
-@media (min-width: 620px) {
-    nav ul li {
-        margin: 0 30px;
-    }
+.pricing-table {
+    background: var(--primary);
+    color: var(--text-color);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
 
-    h1 {
-        font-size: 4em;
-    }
+.pricing-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
-    header p {
-        font-size: 1.4em;
-    }
+.pricing-table th, .pricing-table td {
+    padding: 10px;
+    border-bottom: 1px solid var(--text-color);
 }
 
 
-@media (min-width: 950px) {
-    .pricing-table {
-        display: inline-block;
-        width: 45%;
-        margin: 20px;
-    }
+.cta-button {
+    display: block;
+    text-align: center;
+    background: var(--accent);
+    color: var(--text-color);
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 15px;
+}
 
-    h2 {
-        font-size: 2.5em;
+
+@media (min-width: 768px) {
+    nav ul li a {
+        width: 50%;
+    }
+    section {
+        max-width: 700px;
     }
 }
 
-@media (min-width: 1280px) {
-    main {
-        padding: 60px;
-    }
-
-    h1 {
-        font-size: 5em;
-    }
-
-    header p {
-        font-size: 1.5em;
+@media (min-width: 1024px) {
+    section {
+        max-width: 800px;
     }
 }
